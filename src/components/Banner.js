@@ -1,5 +1,5 @@
-import axios from "E:\\Projects\\netflix-clone\\src\\axios.js";
-import requests from "E:\\Projects\\netflix-clone\\src\\request.js";
+import axios from "../axios";
+import requests from "../request";
 import React, { useEffect, useState } from "react";
 import "./Banner.css";
 
@@ -43,7 +43,7 @@ return string?.length > n ? string.substr(0,n-1)+'...':string;
             </div>
 
             <div className="banner_desc">
-             {truncate(movie?.overview,100)}
+             {truncate(movie?.overview,150)}
             </div>
 
         </div>
